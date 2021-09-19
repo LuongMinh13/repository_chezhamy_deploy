@@ -1,0 +1,11 @@
+<section class="section container menu" id="menu">
+    <span class="section__subtitle">Menu</span>
+    <h1 class="section__title">Notre Spécialité</h1>
+    <div class="menu__container grid">
+        <div class="menu__data" *ngFor='let LeMenu of LesMenu'>
+            <img [src]='LeMenu.ImageMenu' alt="" class="img menu__img">
+            <h3 class="menu__title">{{LeMenu.MenuTitle}}</h3>
+            <p class="menu__subtitle">{{LeMenu.MenuSubtitle}}</p>
+        </div>
+    </div>
+</section>

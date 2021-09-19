@@ -1,0 +1,34 @@
+<!-- <section class="section services container" id='services'>
+    <span class="section__subtitle">Notre Services</span>
+    <h1 class="section__title">Pour votre bonheur</h1>
+    <div class="services__container grid">
+        <div class="services__data">
+            <img class="services__img" src="../../assets/icon/cooking (1).png" alt="">
+            <h3 class="services__title">Excellent cuisine</h3>
+            <p class="services__subtitle">Pour votre bonheur nous avons sélectionné des meilleurs plats, cuisiner par le meilleur soin de notre chef.</p>
+        </div>
+        <div class="services__data">
+            <img class="services__img" src="../../assets/icon/meat (1).png" alt="">
+            <h3 class="services__title">Meilleur ingrédient</h3>
+            <p class="services__subtitle">Les plats cuisinés entièrement sur place à partir de produits bruts. Les produits ont sélectionné par nos soin.</p>
+        </div>
+        <div class="services__data">
+            <img class="services__img" src="../../assets/icon/package.png" alt="">
+            <h3 class="services__title">Livraison à votre domicile</h3>
+            <p class="services__subtitle">Retrouvez-vous sur l'application Deliveroo, ou simplement de nous appeler pour faites livrer votre plats à votre domicile</p>
+        </div>
+    </div>
+</section> -->
+
+
+<section class="section services container" id='services'>
+    <span class="section__subtitle">Notre Services</span>
+    <h1 class="section__title">Pour votre bonheur</h1>
+    <div class="services__container grid">
+        <div class="services__data" *ngFor='let LeService of LesServices'>
+            <img class="services__img" [src]='LeService.ServicesIcon' alt="">
+            <h3 class="services__title">{{LeService.ServicesTitle}}</h3>
+            <p class="services__subtitle">{{LeService.ServicesSubtitle}}</p>
+        </div>
+    </div>
+</section>
